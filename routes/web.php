@@ -27,3 +27,7 @@ Route::get('r1',function (){
 Route::get('r2',function (){
     return view('welcome');
 });
+//修改Route接受參數
+Route::get('hello/{name}',function ($name){
+    return 'Hello, '.$name;
+});
