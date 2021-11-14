@@ -35,3 +35,7 @@ Route::get('hello/{name}',function ($name){
 Route::get('hello/{name?}',function ($name='Everybody'){
     return 'Hello, '.$name;
 });
+//新增Route觀察artisan
+Route::get('world',function (){
+    return 'Hello, world!!!';
+});
