@@ -39,3 +39,7 @@ Route::get('hello/{name?}',function ($name='Everybody'){
 Route::get('world',function (){
     return 'Hello, world!!!';
 });
+//設定dashboard路徑的Route
+Route::get('dashboard',function (){
+    return 'dashboard';
+});
