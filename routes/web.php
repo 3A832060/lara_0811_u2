@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//設定Route回傳字串
+Route::get('/',function(){
+    return 'welcome';
+});
