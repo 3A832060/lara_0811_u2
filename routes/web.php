@@ -20,3 +20,10 @@ Route::get('/', function () {
 Route::get('/',function(){
     return 'welcome';
 });
+//設定Route轉跳路由
+Route::get('r1',function (){
+    return redirect('r2');
+});
+Route::get('r2',function (){
+    return view('welcome');
+});
